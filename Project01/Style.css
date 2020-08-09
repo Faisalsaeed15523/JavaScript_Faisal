@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+:root{
+
+    --success-color: lightgreen;
+    --error-color: orangered;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+    font-family: 'Red Rose', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    }
+    
+    .container {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px black;
+        width: 500px;
+        
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .form {
+        padding: 30px 40px;
+        
+    }
+
+    .form-control {
+
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    .form-control label {
+
+            color: gray;
+            display: block;
+            margin-bottom:  5px;
+    }
+
+    .form-control input {
+
+        border: 2px Solid blanchedalmond;
+        border-radius: 4px;
+        display: block;
+        width: 400PX;
+        padding: 10px;
+        font-size: 14px;    
+    }
+
+    .form-control input :focus {
+
+        outline: 0;
+        border-color: brown;
+    }
+
+    .form-control.success input {
+
+        border-color: var(--success-color);
+    }
+
+    .form-control.error input {
+
+        border-color: var(--error-color);
+
+    }
+    .form-control small {
+
+        color: var(--error-color);
+        position: absolute;
+        bottom: 50;
+        left: 0px;
+        visibility: hidden;
+        
+    }
+
+    .form-control.error small {
+
+        visibility: visible;
+        
+    }
+
+    .form button {
+        cursor: pointer;
+        width: 400px;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 10px;
+        color: white;
+        background-color: darkgrey;
+        font-size: 17px;
+    
+    }
+
+    .home   {
+        align-self: start;
+        font-size: 20px;
+
+        color: yellow;
+    }
+
+
+    
+
+
+
+
+
